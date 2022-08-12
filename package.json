@@ -15,8 +15,7 @@
   },
   "lint-staged": {
     "*.ts": [
-      "npx pretty-quick --staged",
-      "eslint 'src/**' --fix"
+      "eslint 'src/**' --fix && git add"
     ]
   },
   "keywords": [],
