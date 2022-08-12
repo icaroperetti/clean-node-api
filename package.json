@@ -13,6 +13,12 @@
       "pre-commit": "npx lint-staged"
     }
   },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npx pretty-quick --staged",
+      "npx eslint --fix src --ext .js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
