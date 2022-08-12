@@ -14,9 +14,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
+    "*.ts": [
       "npx pretty-quick --staged",
-      "npx eslint --fix src --ext .js"
+      "eslint 'src/**' --fix"
     ]
   },
   "keywords": [],
